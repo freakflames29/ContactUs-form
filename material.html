@@ -7,7 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Material Design</title>
   <link rel="stylesheet" href="material.css">
+  <link rel="stylesheet" href="iconfont/icofont/icofont.min.css">
 </head>
+
 
 <body>
   <h2>Contact Us</h2>
@@ -15,13 +17,16 @@
     <div class="mainContent">
       <input type="text" name="name" id="name" required>
       <div class="underline"></div>
-      <label for="name">Name</label>
+      <label for="name">Full Name</label>
+      <small class="error" id="nameerror"></small>
     </div>
 
     <div class="mainContent">
       <input type="text" name="email" id="email" required>
       <div class="underline"></div>
       <label for="email">Email</label>
+        <small class="error" id="emailerror"></small>
+
     </div>
 
     <!-- <div class="mainContent textarea">
@@ -35,9 +40,10 @@
       <label >Message</label>
     </div>
 
-    <button type="submit" name="button" id="btn">Send</button>
+    <button type="submit" name="button" id="btn">Send <i class="icofont-paper-plane"></i> </button>
 
   </div>
+  <script src="validation.js" charset="utf-8"></script>
 </body>
 
 </html>
